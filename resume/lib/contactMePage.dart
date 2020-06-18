@@ -30,12 +30,21 @@ class ContactFormState extends State<ContactForm>{
   final _formKey = GlobalKey<FormState>();
   
   sendMessage() async{
-    if (_formKey.currentState.validate()) {
+    bool isValid =_formKey.currentState.validate();
+    //print('isValid :'+isValid.toString() );
+    if (isValid) {
       Scaffold.of(context).showSnackBar(
         SnackBar(
           content: Text('Sending message...')
         )
         );
+    }else{
+      Scaffold.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Failed to send message.')
+        )
+      );
+      return;
     }
 
     final String _email = 'mailto:bangunnagoro@outlook.com'+
@@ -51,7 +60,7 @@ class ContactFormState extends State<ContactForm>{
         SnackBar(
           content: Text('Failed to send message.')
         )
-        );
+      );
     }
   }
   @override
