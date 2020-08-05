@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
   HomePage({Key key, this.title}) : super(key: key);
 
   final String title;
-  final String description = '''A full-stack software engineer who has passion in developing innovative software with more than 3 years of work experience in Indonesian start-up companies. Loves to learn new technologies and to do experiments in software development using Golang. Has big passion to contribute in open source software.''';
+  final String description = '''A full-stack software engineer who has passion in developing innovative software with 4 years of work experience in Indonesian start-up companies. Loves to learn new technologies and to do experiments in software development using Golang. Has big passion to contribute in open source software.''';
 
   @override
   Widget build(BuildContext context) {

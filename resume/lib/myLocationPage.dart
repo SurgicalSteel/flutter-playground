@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
  
-class OSProjectPage extends StatelessWidget {
+class MyLocationPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text('My Open Source Projects'),
+        title: new Text('My Location'),
         centerTitle: true,
       ),
     );
